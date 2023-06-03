@@ -39,16 +39,15 @@ export function CurrencyCalculator() {
       to,
     });
 
-    router.push(`/?${searchParams.toString()}`);
-
     setLoading(true);
 
     try {
       const res = await fetch(`/api/convert/?from=${from}&to=${to}&amount=${amount}`);
-
+      
       if (!res.ok) {
         throw new Error("Response error from server");
       }
+      router.push(`/?${searchParams.toString()}`);
       const data = await res.json();
       setResult(data);
     } catch (e) {
