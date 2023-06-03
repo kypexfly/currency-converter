@@ -1,8 +1,23 @@
+# Currency Converter
+Convert different types of currencies in real time.
+
+Tools used
+* [framer-motion](https://www.framer.com/motion/)
+* [ui/shadcn](https://ui.shadcn.com/)
+* Next.js API routes
+* RapidAPI
+
+# Getting Started
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+First, setup your [RapidAPI key](https://rapidapi.com/principalapis/api/currency-conversion-and-exchange-rates) (account needed) in the .env file at root directory.
+```env
+RAPIDAPI_KEY="YOUR API KEY"
+```
 
-First, run the development server:
+
+Then run the development server:
 
 ```bash
 npm run dev
