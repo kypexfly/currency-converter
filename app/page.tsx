@@ -11,7 +11,7 @@ export default function Home() {
       <CurrencyCalculator />
       <footer>
         <a
-          href="https://github.com/kypexfly/ricardochu"
+          href="https://github.com/kypexfly/currency-converter"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block align-middle px-3"
